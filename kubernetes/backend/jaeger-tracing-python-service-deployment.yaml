@@ -41,7 +41,7 @@ spec:
             #  value: xray
             #- name: OTEL_PYTHON_ID_GENERATOR
             #  value: xray
-          image: overdrive3000/jaeger-tracing-python-service:0.0.1
+          image: public.ecr.aws/j8e3t3x0/jaeger-tracing-python-service:0.0.1
           name: jaeger-tracing-python-service
           ports:
             - containerPort: 8092

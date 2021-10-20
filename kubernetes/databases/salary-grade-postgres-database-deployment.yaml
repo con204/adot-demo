@@ -29,7 +29,7 @@ spec:
               value: password
             - name: POSTGRES_USER
               value: postgres
-          image: overdrive3000/salary-postgres
+          image: public.ecr.aws/j8e3t3x0/salary-postgres
           name: salary-postgres
           ports:
             - containerPort: 5432

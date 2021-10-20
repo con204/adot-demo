@@ -22,7 +22,7 @@ spec:
         io.kompose.service: jaeger-tracing-frontend-service
     spec:
       containers:
-        - image: overdrive3000/jaeger-tracing-frontend-service:0.0.6
+        - image: public.ecr.aws/j8e3t3x0/jaeger-tracing-frontend-service:0.0.6
           name: jaeger-tracing-frontend-service
           ports:
             - containerPort: 8080

@@ -41,7 +41,7 @@ spec:
               value: jdbc:postgresql://salary-postgres:5432/salary-grade
             - name: SPRING_DATASOURCE_USERNAME
               value: postgres
-          image: overdrive3000/jaeger-tracing-java-service
+          image: public.ecr.aws/j8e3t3x0/jaeger-tracing-java-service
           name: jaeger-tracing-java-service
           ports:
             - containerPort: 8090
