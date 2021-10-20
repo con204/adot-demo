@@ -31,7 +31,7 @@ spec:
               value: password
             - name: MYSQL_USER
               value: admin
-          image: overdrive3000/jaeger-tracing-salaryamount-mysql
+          image: public.ecr.aws/j8e3t3x0/jaeger-tracing-salaryamount-mysql
           name: jaeger-tracing-salaryamount-mysql
           ports:
             - containerPort: 3306

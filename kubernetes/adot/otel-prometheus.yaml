@@ -140,7 +140,7 @@ spec:
     spec:
       containers:
         - name: aws-otel-collector
-          image: amazon/aws-otel-collector:v0.11.0
+          image: public.ecr.aws/aws-observability/aws-otel-collector:v0.11.0
           env:
             - name: AWS_REGION
               value: ${AWS_REGION}
