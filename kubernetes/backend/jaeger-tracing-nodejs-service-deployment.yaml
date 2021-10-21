@@ -23,10 +23,10 @@ spec:
     spec:
       containers:
         - env:
-            #- name: JAEGER_AGENT_HOST
-            #  value: aws-otel-eks.aws-otel-eks.svc.cluster.local
-            #- name: JAEGER_AGENT_PORT
-            #  value: "6832"
+            - name: JAEGER_AGENT_HOST
+              value: aws-otel-eks.aws-otel-eks.svc.cluster.local
+            - name: JAEGER_AGENT_PORT
+              value: "6832"
             - name: GO_SERVICE_URL
               value: http://jaeger-tracing-go-service:8091/
             - name: JAVA_SERVICE_URL
