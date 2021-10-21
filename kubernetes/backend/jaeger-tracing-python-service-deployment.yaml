@@ -29,18 +29,18 @@ spec:
               value: password
             - name: MYSQL_USER
               value: admin
-            #- name: OTEL_JAEGER_AGENT_HOST
-            #  value: aws-otel-eks.aws-otel-eks.svc.cluster.local
-            #- name: OTEL_JAEGER_AGENT_PORT
-            #  value: "6831"
-            #- name: OTEL_JAEGER_SERVICE_NAME
-            #  value: python-service
-            #- name: OTEL_PYTHON_TRACER_PROVIDER
-            #  value: sdk_tracer_provider
-            #- name: OTEL_PROPAGATORS
-            #  value: xray
-            #- name: OTEL_PYTHON_ID_GENERATOR
-            #  value: xray
+            - name: OTEL_JAEGER_AGENT_HOST
+              value: aws-otel-eks.aws-otel-eks.svc.cluster.local
+            - name: OTEL_JAEGER_AGENT_PORT
+              value: "6831"
+            - name: OTEL_JAEGER_SERVICE_NAME
+              value: python-service
+            - name: OTEL_PYTHON_TRACER_PROVIDER
+              value: sdk_tracer_provider
+            - name: OTEL_PROPAGATORS
+              value: xray
+            - name: OTEL_PYTHON_ID_GENERATOR
+              value: xray
           image: public.ecr.aws/j8e3t3x0/jaeger-tracing-python-service:0.0.1
           name: jaeger-tracing-python-service
           ports:

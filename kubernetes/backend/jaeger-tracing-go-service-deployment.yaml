@@ -27,10 +27,10 @@ spec:
               value: employees
             - name: MONGODB_URI
               value: mongodb://admin:admin@employee-mongo:27017/admin
-            #- name: OTEL_JAEGER_ENDPOINT
-            #  value: http://aws-otel-eks.aws-otel-eks.svc.cluster.local:14268
-            #- name: OTEL_JAEGER_SERVICE_NAME
-            #  value: go-service
+            - name: OTEL_JAEGER_ENDPOINT
+              value: http://aws-otel-eks.aws-otel-eks.svc.cluster.local:14268
+            - name: OTEL_JAEGER_SERVICE_NAME
+              value: go-service
           image: public.ecr.aws/j8e3t3x0/jaeger-tracing-go-service
           name: jaeger-tracing-go-service
           ports:
